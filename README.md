@@ -5,21 +5,24 @@ Made with Rstudio and build on [Shiny Dashboards](https://rstudio.github.io/shin
 ## Features
 The following features are implemented
 ### Maps
-- Hittestress - [link to source](http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/a87f5ca8-f354-4ff6-adc3-70f1bf6b78e3)  
+- Hittestress:  
+  - [link to source](http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/a87f5ca8-f354-4ff6-adc3-70f1bf6b78e3)  
   - [Download](http://geodata.rivm.nl/downloads/ank/RIVM_R88_20170621_gm_actueelUHI.zip)   
   - [link to origin](https://www.atlasnatuurlijkkapitaal.nl/kaarten)   
 - Tree's datasets:  
- Bomen deel 1 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=254)  
- Bomen deel 2 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=255)  
- Bomen deel 3 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=256)  
- Bomen deel 4 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=257)  
-- Groene daken - [link to source](https://maps.amsterdam.nl/open_geodata/?k=51)
-- Play Grounds - [link to source]()
+  - Bomen deel 1 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=254)  
+  - Bomen deel 2 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=255)  
+  - Bomen deel 3 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=256)  
+  - Bomen deel 4 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=257)  
+- Groene daken  
+  - [link to source](https://maps.amsterdam.nl/open_geodata/?k=51)
+- Play Grounds  
+  - [link to source]()
 
 ### Map extra's
-- minimap | [use guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/Norkart/Leaflet-MiniMap) |
-- bigzoom | [use guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/CliffCloud/Leaflet.EasyButton) |
-- measure  | [use guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/ljagis/leaflet-measure) |
+- minimap | [guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/Norkart/Leaflet-MiniMap) |
+- bigzoom | [guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/CliffCloud/Leaflet.EasyButton) |
+- measure  | [guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/ljagis/leaflet-measure) |
 
 ### Theme
 We used a combination of a bootstrap theme and some custom css ([usage of css in shiny](https://shiny.rstudio.com/articles/css.html)). Bootstrap theme is called "superhero" ([source](https://bootswatch.com/superhero/)).
@@ -34,7 +37,6 @@ shinyUI(bootstrapPage(
             ...
         )
 )
-
 ```
 Or a theme selector:
 ```r
@@ -54,10 +56,28 @@ To make the dashboard publicly available, you can make install shiny server your
 [*Read more information of deploying shiny dashboard*](https://shiny.rstudio.com/tutorial/written-tutorial/lesson7/)
 
 ### Packages used
-
+The following packages are used.  
+*copy & paste this code below into a R console to install them* 
 ```r
-install.packages()
-install.pacages()
+install.packages("shiny")
+install.packages("markdown")
+install.packages("shinyWidgets")
+install.packages("shinyhelper")
+install.packages("htmlwidgets")
+install.packages("rgdal")
+install.packages("sf")
+install.packages("sp")
+install.packages("maps")
+install.packages("maptools")
+install.packages("leaflet")
+install.packages("leaflet.extras")
+install.packages("raster")
+install.packages("tidyverse")
+install.packages("shinythemes")
+install.packages("devtools")
+install.packages("mapview")
+install.packages("RColorBrewer")
+install.packages("htmlwidgets")
 ```
 
 ### Coordinate Reference Systems
