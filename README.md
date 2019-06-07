@@ -1,15 +1,20 @@
 # Knowledgemile Map
-Supporting knowledgemile Park project with an interactive map of the `city climate` and the `biodiversity` of its surroundings from open data sources.
-
+Supporting knowledgemile Park project with an interactive map of the `city climate` and the `biodiversity` of its surroundings from open data sources.  
 Made with Rstudio and build on [Shiny Dashboards](https://rstudio.github.io/shinydashboard/) and [Leaflet for R](https://rstudio.github.io/leaflet/)
 
 ## Features
 The following features are implemented
 ### Maps
-- Hittestress - [link to source](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)
-- Bomen - [link to source](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)
-- Groene daken - [link to source](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)
-- Play Grounds - [link to source](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)
+- Hittestress - [link to source](http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/a87f5ca8-f354-4ff6-adc3-70f1bf6b78e3)  
+  - [Download](http://geodata.rivm.nl/downloads/ank/RIVM_R88_20170621_gm_actueelUHI.zip)   
+  - [link to origin](https://www.atlasnatuurlijkkapitaal.nl/kaarten)   
+- Tree's datasets:  
+ Bomen deel 1 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=254)  
+ Bomen deel 2 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=255)  
+ Bomen deel 3 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=256)  
+ Bomen deel 4 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=257)  
+- Groene daken - [link to source](https://maps.amsterdam.nl/open_geodata/?k=51)
+- Play Grounds - [link to source]()
 
 ### Map extra's
 - minimap | [use guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/Norkart/Leaflet-MiniMap) |
@@ -23,15 +28,19 @@ Usage:
 ## ui.R ##
 library(shinythemes)
 
-fluidPage(theme = shinytheme("cerulean"),
-  ...
+shinyUI(bootstrapPage(
+            theme = shinytheme("superhero"),
+            includeCSS("style.css"),
+            ...
+        )
 )
+
 ```
 Or a theme selector:
 ```r
 shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ```
-[Read more about themes](https://rstudio.github.io/shinythemes/)
+[*Read more about themes*](https://rstudio.github.io/shinythemes/)
 
 ## Requirements for deployment
 To make the dashboard publicly available, you can make install shiny server yourself:
@@ -42,7 +51,7 @@ To make the dashboard publicly available, you can make install shiny server your
 - [shinyapps.io](https://shinyapps.io)
 - [Rstudio Connect](https://www.rstudio.com/products/connect/) (More advanced)
 
-[More information of deploying shiny dashboard](https://shiny.rstudio.com/tutorial/written-tutorial/lesson7/)
+[*Read more information of deploying shiny dashboard*](https://shiny.rstudio.com/tutorial/written-tutorial/lesson7/)
 
 ### Packages used
 
@@ -52,14 +61,13 @@ install.pacages()
 ```
 
 ### Coordinate Reference Systems
-We use the following CRS throughout the project:
-
+We use the following CRS throughout the project:  
 *+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0*
 ```r
 crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 ```
 
-### Structure
+### File structure
 ```bash
 .
 ├── style.css                        # css stylesheet
