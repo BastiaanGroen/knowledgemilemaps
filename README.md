@@ -47,7 +47,9 @@ shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ## Requirements for deployment
 To make the dashboard publicly available, you can make install shiny server yourself:
 
-- Shiny Server [Instructions](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)
+- Shiny Server  
+ [Official instructions](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)  
+ [Better instructions](https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04)  
 
 *OR* use a service:
 - [shinyapps.io](https://shinyapps.io)
