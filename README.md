@@ -2,7 +2,7 @@
 <p align="center"><img src="./img/logo.png" /></p>  
 
 
-# <h1 align="center">🗺️ Knowledgemile Maps 🗺️</h1>  
+# <p align="center" style="border-bottom: none !importand;">🗺️ Knowledgemile Maps 🗺️</p>  
 <p align="center">
 Supporting knowledgemile Park project with an interactive map of the 'city climate' and the 'biodiversity' of its surroundings from open data sources.  
 Made with Rstudio and build on <a href="https://rstudio.github.io/shinydashboard/">Shiny Dashboards</a> and <a href="https://rstudio.github.io/leaflet/">Leaflet for R </a>
