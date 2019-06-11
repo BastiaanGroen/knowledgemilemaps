@@ -8,12 +8,14 @@
 <p align="center">
 <br>Supporting knowledgemile Park project with an interactive map of the 'urban climate' and the 'biodiversity' of its surroundings from open data sources.  
 Made with Rstudio and build on <a href="https://rstudio.github.io/shinydashboard/">Shiny Dashboards</a> and <a href="https://rstudio.github.io/leaflet/">Leaflet for R</a>.<br>  
-The research question of this project was: "How can biodiversity and urban climate of the knowledge mile park be mapped that creates added value for discussions and meetings with stakeholders?"
+The research question of this project was: "How can biodiversity and urban climate of the knowledge mile park be mapped that creates added value for discussions and meetings with stakeholders?"  <br>
+ 
+<br>
 </p>
 
 ---
 ## 🔎 Table of content
-The index of this document.
+The index of this document. In this document you can find references to used sources. There is also a short description about how this project can be replicated.
   * [Features](#features)
     + [Maps](#maps)
     + [Map features](#map-features)
