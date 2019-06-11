@@ -121,23 +121,26 @@ crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 ### File structure
 ```bash
 .
-├── style.css                        # css stylesheet
-├── server.R                         # server side R script
-├── ui.R                             # Ui side R script    
+├── style.css                              # css stylesheet
+├── server.R                               # server side R script
+├── ui.R                                   # Ui side R script    
 ├── data
 │   ├── groene_daken_2.shp
 │   ├── raster_amsterdam_hittestress.tif
 │   ├── GEBIED_BUURTEN.json
-│   ├── ...groen_daken_2.*           # all other shp file extensions
-│   ├── knowledge_mile_bomen_1.shp
-│   ├── ...knowledge_mile_bomen_1.*  # all other shp file extensions 
-│   ├── knowledge_mile_bomen_2.shp
-│   ├── ...knowledge_mile_bomen_2.*  # all other shp file extensions 
-│   ├── knowledge_mile_bomen_3.shp
-│   ├── ...knowledge_mile_bomen_3.*  # all other shp file extensions 
-│   ├── knowledge_mile_bomen_4.shp
-│   └── ...knowledge_mile_bomen_4.*  # all other shp file extensions
-└── README.md
+│   ├── ...groen_daken_2.*                 # All other shp file extensions
+│   ├── knowledge_mile_bomen_1.shp     
+│   ├── ...knowledge_mile_bomen_1.*        # All other shp file extensions 
+│   ├── knowledge_mile_bomen_2.shp     
+│   ├── ...knowledge_mile_bomen_2.*        # All other shp file extensions 
+│   ├── knowledge_mile_bomen_3.shp     
+│   ├── ...knowledge_mile_bomen_3.*        # All other shp file extensions 
+│   ├── knowledge_mile_bomen_4.shp     
+│   └── ...knowledge_mile_bomen_4.*        # All other shp file extensions
+├── img      
+│   ├── logo.png                           # Knowledgemile logo used in this document
+│   └── HVA-logo_ZW.png                    # Hva logo used in this document
+└── README.md                              # This document
 ```
 
 
