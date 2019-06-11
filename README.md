@@ -2,7 +2,7 @@
 <p align="center"><img src="./img/logo.png" /></p>  
 
 
-# <p align="center" style="border-bottom: none !importand;">🗺️ Knowledgemile Maps 🗺️</p>  
+# <h1 align="center" style="border-bottom: none !importand;">🗺️ Knowledgemile Maps 🗺️</h1>  
 <p align="center">
 Supporting knowledgemile Park project with an interactive map of the 'city climate' and the 'biodiversity' of its surroundings from open data sources.  
 Made with Rstudio and build on <a href="https://rstudio.github.io/shinydashboard/">Shiny Dashboards</a> and <a href="https://rstudio.github.io/leaflet/">Leaflet for R </a>
@@ -63,7 +63,7 @@ Or a theme selector:
 ```r
 shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ```
-[*Read more about themes*](https://rstudio.github.io/shinythemes/)
+> [*Read more about themes*](https://rstudio.github.io/shinythemes/)
 
 ## Development Knowledgemile Maps
 How to continue with the Knowledgemile Maps  
@@ -79,7 +79,7 @@ To make the dashboard publicly available, you can make install shiny server your
 - [shinyapps.io](https://shinyapps.io)
 - [Rstudio Connect](https://www.rstudio.com/products/connect/) (More advanced)
 
-[*Read more information of deploying shiny dashboard*](https://shiny.rstudio.com/tutorial/written-tutorial/lesson7/)
+> [*Read more information of deploying shiny dashboard*](https://shiny.rstudio.com/tutorial/written-tutorial/lesson7/)
 
 ### Packages used
 The following packages are used.  
