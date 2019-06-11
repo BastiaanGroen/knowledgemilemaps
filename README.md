@@ -73,18 +73,12 @@ shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ## <a name="development-knowledgemile-maps"></a> 🛠 Development Knowledgemile Maps
 How to continue with the Knowledgemile Maps  
 
-### Requirements for deployment
-To make the dashboard publicly available, you can make install shiny server yourself:
+### Show/hide leaflet layers
+We first make a leaflet plot inside the `server.R`. Each layer is assigned to a group. The legend of that layer is then connected to the same group. We can show and hide a layer using a observer and a proxy of leaflet. We use an observer so that only a small part of the leaflet plot is redrawn. The `input$dropbox` is a vector of the selected choices straight from the `ui.R`.
+```r
+waiting for code...
 
-- Shiny Server  
- [Official instructions](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)  
- [Better instructions](https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04)   
-
-*OR* use a service:
-- [shinyapps.io](https://shinyapps.io)
-- [Rstudio Connect](https://www.rstudio.com/products/connect/) (More advanced)
-
-> [*Read more information of deploying shiny dashboard*](https://shiny.rstudio.com/tutorial/written-tutorial/lesson7/)
+```
 
 ### Packages used
 The following packages are used.  
@@ -110,19 +104,28 @@ install.packages("mapview")
 install.packages("RColorBrewer")
 install.packages("htmlwidgets")
 ```  
-### show/hide leaflet layers
-We first make a leaflet plot inside the `server.R`. Each layer is assigned to a group. The legend of that layer is then connected to the same group. We can show and hide a layer using a observer and a proxy of leaflet. We use an observer so that only a small part of the leaflet plot is redrawn. The `input$dropbox` is a vector of the selected choices straight from the `ui.R`.
-```r
-waiting for code...
-
-```
 
 ### Coordinate Reference Systems
 We use the following CRS throughout the project:  
 *+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0*
 ```r
 crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
-```
+```  
+
+## <a name="deployment"></a> 📦 Deployment
+
+### Hosting dashboard
+To make the dashboard publicly available, you can make install shiny server yourself:
+
+- Shiny Server  
+ [Official instructions](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)  
+ [Better instructions](https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04)   
+
+*OR* use a service:
+- [shinyapps.io](https://shinyapps.io)
+- [Rstudio Connect](https://www.rstudio.com/products/connect/) (More advanced)
+
+> [*Read more information of deploying shiny dashboard*](https://shiny.rstudio.com/tutorial/written-tutorial/lesson7/)  
 
 ### File structure
 ```bash
