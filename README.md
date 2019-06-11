@@ -109,6 +109,12 @@ install.packages("devtools")
 install.packages("mapview")
 install.packages("RColorBrewer")
 install.packages("htmlwidgets")
+```  
+### show/hide leaflet layers
+We first make a leaflet plot inside the `server.R`. Each layer is assigned to a group. The legend of that layer is then connected to the same group. We can show and hide a layer using a observer and a proxy of leaflet. We use an observer so that only a small part of the leaflet plot is redrawn. The `input$dropbox` is a vector of the selected choices straight from the `ui.R`.
+```r
+waiting for code...
+
 ```
 
 ### Coordinate Reference Systems
