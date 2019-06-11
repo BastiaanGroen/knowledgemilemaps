@@ -1,3 +1,5 @@
+![knowledgemile logo](https://knowledgemile.amsterdam/img/preloader/logo.svg?sanitize=true "KnowledgeMile")  
+
 # Knowledgemile Maps
 Supporting knowledgemile Park project with an interactive map of the `city climate` and the `biodiversity` of its surroundings from open data sources.  
 Made with Rstudio and build on [Shiny Dashboards](https://rstudio.github.io/shinydashboard/) and [Leaflet for R](https://rstudio.github.io/leaflet/)
@@ -44,7 +46,7 @@ shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ```
 [*Read more about themes*](https://rstudio.github.io/shinythemes/)
 
-## proceed with Knowledgemile Maps
+## Development Knowledgemile Maps
 How to continue with the Knowledgemile Maps  
 
 ### Requirements for deployment
@@ -52,7 +54,7 @@ To make the dashboard publicly available, you can make install shiny server your
 
 - Shiny Server  
  [Official instructions](https://github.com/rstudio/shiny-server/blob/master/README.md#Installing)  
- [Better instructions](https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04)  
+ [Better instructions](https://www.digitalocean.com/community/tutorials/how-to-set-up-shiny-server-on-ubuntu-16-04)   
 
 *OR* use a service:
 - [shinyapps.io](https://shinyapps.io)
