@@ -6,14 +6,13 @@
 
 
 <p align="center">
-<br>Supporting knowledgemile Park project with an interactive map of the 'city climate' and the 'biodiversity' of its surroundings from open data sources.  
-Made with Rstudio and build on <a href="https://rstudio.github.io/shinydashboard/">Shiny Dashboards</a> and <a href="https://rstudio.github.io/leaflet/">Leaflet for R </a><br>
-  
-<br>  
+<br>Supporting knowledgemile Park project with an interactive map of the 'urban climate' and the 'biodiversity' of its surroundings from open data sources.  
+Made with Rstudio and build on <a href="https://rstudio.github.io/shinydashboard/">Shiny Dashboards</a> and <a href="https://rstudio.github.io/leaflet/">Leaflet for R</a>.<br>  
+The research question of this project was: "How can biodiversity and urban climate of the knowledge mile park be mapped that creates added value for discussions and meetings with stakeholders?"
 </p>
 
 ---
-## Table of content
+## 🔎 Table of content
 The index of this document.
   * [Features](#features)
     + [Maps](#maps)
@@ -27,7 +26,7 @@ The index of this document.
   * [Contact](#contact)
   
 
-## Features
+## <a name="features"></a> 🔦 Features
 The following features are implemented
 ### Maps
 - Hittestress:  
@@ -69,7 +68,7 @@ shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ```
 > [*Read more about themes*](https://rstudio.github.io/shinythemes/)
 
-## Development Knowledgemile Maps
+## <a name="development-knowledgemile-maps"></a> 🛠 Development Knowledgemile Maps
 How to continue with the Knowledgemile Maps  
 
 ### Requirements for deployment
@@ -140,7 +139,7 @@ crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 ```
 
 
-## Contact
+## <a name="contact"></a> 🏷 Contact
 ```r
 # _  __                    _          _              __  __ _ _      
 #| |/ /                   | |        | |            |  \/  (_) |     
