@@ -1,8 +1,27 @@
-![knowledgemile logo](https://knowledgemile.amsterdam/img/preloader/logo.svg?sanitize=true "KnowledgeMile")  
 
-# Knowledgemile Maps
-Supporting knowledgemile Park project with an interactive map of the `city climate` and the `biodiversity` of its surroundings from open data sources.  
-Made with Rstudio and build on [Shiny Dashboards](https://rstudio.github.io/shinydashboard/) and [Leaflet for R](https://rstudio.github.io/leaflet/)
+<p align="center"><img src="./img/logo.png" /></p>  
+
+
+# <h1 align="center">🗺️ Knowledgemile Maps 🗺️</h1>  
+<p align="center">
+Supporting knowledgemile Park project with an interactive map of the 'city climate' and the 'biodiversity' of its surroundings from open data sources.  
+Made with Rstudio and build on <a href="https://rstudio.github.io/shinydashboard/">Shiny Dashboards</a> and <a href="https://rstudio.github.io/leaflet/">Leaflet for R </a>
+</p>  
+
+---
+## Table of content
+The index of this document.
+  * [Features](#features)
+    + [Maps](#maps)
+    + [Map features](#map-features)
+    + [Theme](#theme)
+  * [Development Knowledgemile Maps](#development-knowledgemile-maps)
+    + [Requirements for deployment](#requirements-for-deployment)
+    + [Packages used](#packages-used)
+    + [Coordinate Reference Systems](#coordinate-reference-systems)
+    + [File structure](#file-structure)
+  * [Contact](#contact)
+  
 
 ## Features
 The following features are implemented
@@ -21,7 +40,7 @@ The following features are implemented
 - Play Grounds  
   - [link to source]()
 
-### Map extra's
+### Map features
 - minimap | [guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/Norkart/Leaflet-MiniMap) |
 - bigzoom | [guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/CliffCloud/Leaflet.EasyButton) |
 - measure  | [guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/ljagis/leaflet-measure) |
@@ -140,4 +159,4 @@ crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 # ----
 ```
 
-
+![hva logo](./img/HVA-logo_ZW.png "hva")  
