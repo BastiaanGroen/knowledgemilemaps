@@ -1,4 +1,4 @@
-# Knowledgemile Map
+# Knowledgemile Maps
 Supporting knowledgemile Park project with an interactive map of the `city climate` and the `biodiversity` of its surroundings from open data sources.  
 Made with Rstudio and build on [Shiny Dashboards](https://rstudio.github.io/shinydashboard/) and [Leaflet for R](https://rstudio.github.io/leaflet/)
 
@@ -10,10 +10,10 @@ The following features are implemented
   - [Download](http://geodata.rivm.nl/downloads/ank/RIVM_R88_20170621_gm_actueelUHI.zip)   
   - [link to origin](https://www.atlasnatuurlijkkapitaal.nl/kaarten)   
 - Tree's datasets:  
-  - Bomen deel 1 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=254)  
-  - Bomen deel 2 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=255)  
-  - Bomen deel 3 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=256)  
-  - Bomen deel 4 - [link to source](https://maps.amsterdam.nl/open_geodata/?k=257)  
+  - [link to source part 1](https://maps.amsterdam.nl/open_geodata/?k=254)    
+  - [link to source part 2](https://maps.amsterdam.nl/open_geodata/?k=255)    
+  - [link to source part 3](https://maps.amsterdam.nl/open_geodata/?k=256)      
+  - [link to source part 4](https://maps.amsterdam.nl/open_geodata/?k=257)    
 - Groene daken  
   - [link to source](https://maps.amsterdam.nl/open_geodata/?k=51)
 - Play Grounds  
@@ -44,7 +44,10 @@ shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ```
 [*Read more about themes*](https://rstudio.github.io/shinythemes/)
 
-## Requirements for deployment
+## proceed with Knowledgemile Maps
+How to continue with the Knowledgemile Maps  
+
+### Requirements for deployment
 To make the dashboard publicly available, you can make install shiny server yourself:
 
 - Shiny Server  
