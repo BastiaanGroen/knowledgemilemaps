@@ -1,4 +1,4 @@
-
+<br>
 <p align="center"><img src="./img/logo.png" /></p>  
 <br>
 
@@ -13,7 +13,9 @@ The research question of this project was: "How can biodiversity and urban clima
 <br>
 </p>
 
----
+---  
+<br>
+
 ## 🔎 Table of content
 The index of this document. In this document you can find references to used sources. There is also a short description about how this project can be replicated.
   * [Features](#features)
