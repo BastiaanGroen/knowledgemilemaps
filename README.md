@@ -78,9 +78,33 @@ How to continue with the Knowledgemile Maps
 ### Show/hide leaflet layers
 We first make a leaflet plot inside the `server.R`. Each layer is assigned to a group. The legend of that layer is then connected to the same group. We can show and hide a layer using a observer and a proxy of leaflet. We use an observer so that only a small part of the leaflet plot is redrawn. The `input$dropbox` is a vector of the selected choices straight from the `ui.R`.
 ```r
-waiting for code...
-
+## server.R ##
+output$map <- renderLeaflet({
+   leaflet(...)
+   ...
+})
+...
+observe({
+    proxy <- leafletProxy("map")
+    if ("hittestress" %in% input$DropDown) {
+        proxy %>%
+            showGroup("hittestress")
+    }
+    if (!("hittestress" %in% input$DropDown)) {
+        proxy %>%
+            hideGroup("hittestress")
+    }
 ```
+### Performance of the data
+We transformed some large files into .shp files. We also filtert the data so it only contains data from Amsterdam.  
+We first made an Amsterdam polygon from combining all Amsterdam neighbourhoods (`Buurten`). After that we made the crs of the raw data the same as the project. At last, we filterd the raw data on the Amsterdam polygon. 
+```r
+AmsterdamPolygon <- st_union(Buurten)
+data_hittestress <- projectRaster(data_hittestress,crs="+proj=longlat +datum=WGS84 +no_defs")
+hittestress_Amsterdam <- raster::intersect(hittestress_new,as(AmsterdamPolygon,"Spatial"))
+```
+We then exported this data into a new file. The server can load this new file much faster.
+
 
 ### Packages used
 The following packages are used.  
@@ -176,6 +200,35 @@ To make the dashboard publicly available, you can make install shiny server your
 # contactpersonen:  Maarten Terpstra;
 #                   Corine Laan;
 # ----
+```
+
+## <a name="todo"></a> 🏷 Unfinished business
+The following features weren't finished in time.  
+### Printing
+We found some javascript code that can print a leaflet map. But this only works in chrome and is buggy.
+[rowanwins leaflet easyprint](https://github.com/rowanwins/leaflet-easyPrint)  
+Server Code:
+```r
+## server.R ##
+leaflet(...) %>%
+onRender(
+      "function(el, x) {
+       L.easyPrint({
+         sizeModes: ['A4Landscape', 'A4Portrait','a3Size'],
+         filename: 'map',
+         exportOnly: false,
+         hideControlContainer: true
+       }).addTo(this);
+       }"
+)
+```  
+ui Code:
+```r
+## ui.R ##
+jsfile <- "https://rawgit.com/rowanwins/leaflet-easyPrint/gh-pages/dist/bundle.js"
+
+# inside shinyUI:
+  tags$head(tags$script(src = jsfile))
 ```
 
 ![hva logo](./img/HVA-logo_ZW.png "hva")  
