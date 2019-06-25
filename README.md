@@ -18,16 +18,26 @@ The research question of this project was: "How can biodiversity and urban clima
 
 ## 🔎 Table of content
 The index of this document. In this document you can find references to used sources. There is also a short description about how this project can be replicated.
-  * [Features](#features)
-    + [Maps](#maps)
-    + [Map features](#map-features)
-    + [Theme](#theme)
-  * [Development Knowledgemile Maps](#development-knowledgemile-maps)
-    + [Requirements for deployment](#requirements-for-deployment)
-    + [Packages used](#packages-used)
-    + [Coordinate Reference Systems](#coordinate-reference-systems)
-    + [File structure](#file-structure)
-  * [Authors](#contact)
+- [Features](#features)
+  * [Maps](#maps)
+  * [Map features](#map-features)
+  * [Theme](#theme)
+- [Development Knowledgemile Maps](#development-knowledgemile-maps)
+  * [Show and hide leaflet layers](#show-and-hide-leaflet-layers)
+  * [Performance of the data](#performance-of-the-data)
+  * [Packages used](#packages-used)
+  * [Coordinate Reference Systems](#coordinate-reference-systems)
+- [Deployment](#deployment)
+  * [Hosting dashboard](#hosting-dashboard)
+  * [File structure](#file-structure)
+- [Unfinished business](#todo)
+  * [Printing](#printing)
+  * [More datasets](#more-datasets)
+  * [Story Telling](#story-telling)
+- [Authors](#contact)
+  
+
+
   
 
 ## <a name="features"></a> 🔦 Features
@@ -75,7 +85,7 @@ shinythemes::themeSelector()  # <--- Add this somewhere in the UI
 ## <a name="development-knowledgemile-maps"></a> 🛠 Development Knowledgemile Maps
 How to continue with the Knowledgemile Maps  
 
-### Show/hide leaflet layers
+### Show and hide leaflet layers
 We first make a leaflet plot inside the `server.R`. Each layer is assigned to a group. The legend of that layer is then connected to the same group. We can show and hide a layer using a observer and a proxy of leaflet. We use an observer so that only a small part of the leaflet plot is redrawn. The `input$dropbox` is a vector of the selected choices straight from the `ui.R`.
 ```r
 ## server.R ##
