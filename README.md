@@ -27,7 +27,7 @@ The index of this document. In this document you can find references to used sou
     + [Packages used](#packages-used)
     + [Coordinate Reference Systems](#coordinate-reference-systems)
     + [File structure](#file-structure)
-  * [Contact](#contact)
+  * [Authors](#contact)
   
 
 ## <a name="features"></a> 🔦 Features
@@ -179,29 +179,6 @@ To make the dashboard publicly available, you can make install shiny server your
 ```
 
 
-## <a name="contact"></a> 🏷 Contact
-```r
-# _  __                    _          _              __  __ _ _      
-#| |/ /                   | |        | |            |  \/  (_) |     
-#| ' / _ __   _____      _| | ___  __| | __ _  ___  | \  / |_| | ___ 
-#|  < | '_ \ / _ \ \ /\ / / |/ _ \/ _` |/ _` |/ _ \ | |\/| | | |/ _ \
-#| . \| | | | (_) \ V  V /| |  __/ (_| | (_| |  __/ | |  | | | |  __/
-#|_|\_\_| |_|\___/ \_/\_/ |_|\___|\__,_|\__, |\___| |_|  |_|_|_|\___|
-#   | _  _ |_  |_) _  _ _|_ o  _  _ __   __/ |
-# \_|(_)_> | | |_)(_|_>  |_ | (_|(_|| | |___/                                                 
-#                                         
-# ----
-# Minor:            Data Science
-# Track:            Urban Analytics
-# Semester:         2
-# Projectsite:      https://knowledgemile.amsterdam/
-# Auteurs:          Josh Bleijenberg;
-#                   Bastiaan Groen;
-# contactpersonen:  Maarten Terpstra;
-#                   Corine Laan;
-# ----
-```
-
 ## <a name="todo"></a> 🏷 Unfinished business
 The following features weren't finished in time.  
 ### Printing
@@ -231,4 +208,39 @@ jsfile <- "https://rawgit.com/rowanwins/leaflet-easyPrint/gh-pages/dist/bundle.j
   tags$head(tags$script(src = jsfile))
 ```
 
+### More datasets
+There are a lot of datasets that can be included in the KnowledgeMile Maps. Here are some opensource datasets that could be included:
+ - soon...
+ - soon..
+ - soon.
+ 
+### Story Telling
+ It would be nice to have a discription and a legend per dataset about the dataset. We only have made one legend for 'Hittestress'. The legend can also be toggled by the group element in leaflet.
+ ```r
+ #code for legend
+ 
+ ```
+
+
+
+## <a name="contact"></a> 🏷 Authors
+```r
+# _  __                    _          _              __  __ _ _      
+#| |/ /                   | |        | |            |  \/  (_) |     
+#| ' / _ __   _____      _| | ___  __| | __ _  ___  | \  / |_| | ___ 
+#|  < | '_ \ / _ \ \ /\ / / |/ _ \/ _` |/ _` |/ _ \ | |\/| | | |/ _ \
+#| . \| | | | (_) \ V  V /| |  __/ (_| | (_| |  __/ | |  | | | |  __/
+#|_|\_\_| |_|\___/ \_/\_/ |_|\___|\__,_|\__, |\___| |_|  |_|_|_|\___|
+#   | _  _ |_  |_) _  _ _|_ o  _  _ __   __/ |
+# \_|(_)_> | | |_)(_|_>  |_ | (_|(_|| | |___/                                                 
+#                                         
+# ----
+# Minor:            Data Science
+# Track:            Urban Analytics
+# Semester:         2
+# Projectsite:      https://knowledgemile.amsterdam/
+# Auteurs:          Josh Bleijenberg;
+#                   Bastiaan Groen;
+# ----
+```
 ![hva logo](./img/HVA-logo_ZW.png "hva")  
