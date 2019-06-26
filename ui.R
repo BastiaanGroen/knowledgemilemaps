@@ -23,17 +23,6 @@
 #
 
 
-
-#============================
-# Modificeren van data
-#============================
-#  | Hier wordt de data gemodificeerd.
-#  | Bewerkingen en toevoegingen worden hier uitgevoerd
-#  `---
-
-#----------------------------
-
-
 #============================
 # Define UI logic
 #============================
@@ -44,27 +33,12 @@ shinyUI(bootstrapPage(
   
             theme = shinytheme("superhero"),
             tags$style(type = "text/css", "html, body {width:100%;height:100%}"),
-            #tags$head(
-            #  tags$meta(name="theme-color", content="#FFFF00"),
-            #  tags$meta(name="msapplication-navbutton-color", content="#FFFF00"),
-            #  tags$meta(name="apple-mobile-web-app-status-bar-style", content="#FFFF00")
-            #),
+            tags$head(
+              tags$meta(name="theme-color", content="#FFFF00"),
+              tags$meta(name="msapplication-navbutton-color", content="#FFFF00"),
+              tags$meta(name="apple-mobile-web-app-status-bar-style", content="#FFFF00")
+            ),
             
-            
-            ## PRINT KNOP
-            ## haal hastags weg om te activeren (in server.R moet ook de code ge-uncommend worden)
-            #jsfile <- "https://rawgit.com/rowanwins/leaflet-easyPrint/gh-pages/dist/bundle.js"
-            #tags$head(tags$script(src = jsfile)),
-            
-            #tags$script(HTML(
-            #  "var a3Size = {
-            #      width: 2339,
-            #      height: 3308,
-            #      className: 'a3CssClass',
-            #      tooltip: 'A custom A3 size'
-            #  };"
-            #)),
-            #shinythemes::themeSelector(),  # <--- Add this somewhere in the UI | Theme selector
             includeCSS("style.css"),
             
             leafletOutput("map", width = "100%", height = "100%"),
@@ -97,20 +71,9 @@ shinyUI(bootstrapPage(
                                 ), 
                                 multiple = TRUE
                             ) 
-                            
-                              # %>% 
-                              ##......................#
-                              ##       Help Icon      #
-                              ##``````````````````````#
-                              #helper(type = "inline",
-                              #       colour = "green",
-                              #       title = "Inline Help",
-                              #       content = c("This is a <b>plot</b>.",
-                              #                    "This is on a new line."),
-                              #       size = "m")
                           )#end well
                           
-            )# énd absolute panel
+            )# Ã©nd absolute panel
         )#end bootstrap
 )
 #----------------------------
