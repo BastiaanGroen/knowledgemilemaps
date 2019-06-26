@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500&display=swap');
+
+.filter-option{
+    background: #fff !important;
+    color: black !important; 
+}
+.btn.dropdown-toggle.bs-placeholder.btn-default{
+    background: #fff !important;
+    color: black !important;
+}
+
+.filter-option-inner{
+    color: black !important;
+    background: #fff !important;
+}
+
+.dropdown-menu{
+    color: black !important;
+    background: #fff !important;
+}
+.dropdown-menu.inner{
+    color: black !important;
+    background: #fff !important;
+}
+
+.well{
+    border-radius: 10px;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    font-family: "Comfortaa", sans-serif;
+}
+.well h1{
+    font-size: 34px;
+}
+a{
+  color: white;
+  font-style: italic;
+}
+
+a:visited{
+  color: white;
+}
+
+.text{
+  color: black;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+  color: white !important;
+}
+li:hover{
+  color: white;
+}
+
+.dropdown-header{
+  font-size: 1.2em;
+}
+
+.opt.selected{
+  color: green;
+}
+
+.easyPrintHolder .a3CssClass { 
+  background-image: url(data:image/svg+xml;utf8;base64,PD9...go=);
+}
