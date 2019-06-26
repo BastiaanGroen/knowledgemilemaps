@@ -222,9 +222,9 @@ jsfile <- "https://rawgit.com/rowanwins/leaflet-easyPrint/gh-pages/dist/bundle.j
 ### More datasets
 There are a lot of datasets that can be included in the KnowledgeMile Maps. Here are some opensource datasets that could be included:
  - Geluid in Nederland (Lden):  
-  - [link to source](https://www.atlasnatuurlijkkapitaal.nl/kaarten)  
-  - [Download](https://geluid.rivm.nl/geluid/geluidbel_download.html)   
-  - [link to origin](https://www.atlasnatuurlijkkapitaal.nl/kaarten)
+   - [link to source](https://www.atlasnatuurlijkkapitaal.nl/kaarten)  
+   - [Download](https://geluid.rivm.nl/geluid/geluidbel_download.html)   
+   - [link to origin](https://www.atlasnatuurlijkkapitaal.nl/kaarten)
  - soon..
  - soon.
  
