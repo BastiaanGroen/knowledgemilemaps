@@ -227,7 +227,13 @@ There are a lot of datasets that can be included in the KnowledgeMile Maps. Here
 ### Story Telling
  It would be nice to have a discription and a legend per dataset about the dataset. We only have made one legend for 'Hittestress'. The legend can also be toggled by the group element in leaflet.
  ```r
- #code for legend
+leaflet(...) %>%
+... %>%
+addLegend(pal = pal,
+              values = values(data_hittestress),
+              position = "bottomright",
+              title = "Hittestress in (celcius)",
+              group = "hittestress")
  
  ```
 
