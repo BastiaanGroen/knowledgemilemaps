@@ -30,27 +30,21 @@
 #  | Hier worden datasets ingeladen uit de data folder
 #  | Folder van data: KnowledgeMile/data/
 #  `---
-##data_geluid_csv <- read.csv("KnowledgeMile/data/GELUID_VERKEER.csv", sep = ";")
-data_hittestress <- raster("raster_amsterstamd_hittestress.tif")
-waterbergendvermogen_amsterdam_centrum <- raster("waterbergendvermogen_amsterdam_centrum.tif")
+data_hittestress <- raster("data/raster_amsterstamd_hittestress.tif")
+waterbergendvermogen_amsterdam_centrum <- raster("data/waterbergendvermogen_amsterdam_centrum.tif")
 
-data_buurten <- st_read("GEBIED_BUURTEN.json")
+data_buurten <- st_read("data/GEBIED_BUURTEN.json")
 
-data_groene_daken_2 <- st_read("groene_daken_2.shp",
+data_groene_daken_2 <- st_read("data/groene_daken_2.shp",
                                stringsAsFactors = FALSE)
-data_groene_bomen_1 <- st_read("knowledge_mile_bomen_1.shp",
+data_groene_bomen_1 <- st_read("data/knowledge_mile_bomen_1.shp",
                                stringsAsFactors = FALSE)
-data_groene_bomen_2 <- st_read("knowledge_mile_bomen_2.shp",
+data_groene_bomen_2 <- st_read("data/knowledge_mile_bomen_2.shp",
                                stringsAsFactors = FALSE)
-data_groene_bomen_3 <- st_read("knowledge_mile_bomen_3.shp",
+data_groene_bomen_3 <- st_read("data/knowledge_mile_bomen_3.shp",
                                stringsAsFactors = FALSE)
-data_groene_bomen_4 <- st_read("knowledge_mile_bomen_4.shp",
+data_groene_bomen_4 <- st_read("data/knowledge_mile_bomen_4.shp",
                                stringsAsFactors = FALSE)
-
-#data_playgrounds <- st_read("playgrounds.shp",
-#                            stringsAsFactors = FALSE)
-###waterbergendvermogen_amsterdam_centrum <- raster("centrum_90mm1hr_waterdiepte_zowavla.tif") # GROOT bestand!! Duurt Lang
-#data_playgrounds <- st_read("playgrounds.shp")
 
 #---------------------------
 
@@ -61,9 +55,7 @@ data_groene_bomen_4 <- st_read("knowledge_mile_bomen_4.shp",
 #  | Hier wordt de data gemodificeerd.
 #  | Bewerkingen en toevoegingen worden hier uitgevoerd
 #  `---
-##ms <- st_as_sf(data_geluid_csv,
-##               crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
-##)
+
 the_crs <- crs(data_hittestress, asText = TRUE)
 
 knowledge_gebieden <- c("A04h", "A04i", "A08a", "A08b", "M27a", "M27b", "M27c", "M55i", "M58h", "M58g",
@@ -77,28 +69,12 @@ knowledgemilePolygon <- st_union(knowledgemile)
 knowledgemilePolygon <- st_transform(knowledgemilePolygon, crs = the_crs)
 knowledgemilePolygon <- as(knowledgemilePolygon, Class = "Spatial")
 
-#duurt ongeveer 20 min:
-###waterbergendvermogen_amsterdam_centrum <- projectRaster(waterbergendvermogen_amsterdam_centrum,
-###                                                         crs="+proj=longlat +datum=WGS84 +no_defs")
-#-
-
-#bytes naar beneden halen zodat het met leaflet geplot kan worden
-###waterbergendvermogen_amsterdam_centrum <- raster::aggregate(waterbergendvermogen_amsterdam_centrum, fact = 10)
 
 data_groene_daken_sp_2 <- as(data_groene_daken_2, Class = "Spatial")
 data_groene_bomen_1 <- as(data_groene_bomen_1, Class = "Spatial")
 data_groene_bomen_2 <- as(data_groene_bomen_2, Class = "Spatial")
 data_groene_bomen_3 <- as(data_groene_bomen_3, Class = "Spatial")
 data_groene_bomen_4 <- as(data_groene_bomen_4, Class = "Spatial")
-
-#data_playgrounds <- st_transform(data_playgrounds, crs = the_crs)
-#data_playgrounds <- as(data_playgrounds, Class = "Spatial")
-
-##data_knowledgeweg <- as(data_knowledgeweg, Class = "Spatial")
-
-##AmsterdamPolygon <- st_union(Buurten)
-##data_hittestress <- projectRaster(data_hittestress,crs="+proj=longlat +datum=WGS84 +no_defs")
-##hittestress_Amsterdam <- raster::intersect(hittestress_new,as(AmsterdamPolygon,"Spatial"))
 
 pal <- colorNumeric(c("blue", "lightblue", "yellow", "red"), values(data_hittestress),
                     na.color = "transparent")
@@ -251,20 +227,6 @@ leafletkaart <- leaflet(options = leafletOptions(preferCanvas = TRUE)) %>%
                                         clickable = FALSE)
     )%>%
     addScaleBar(position = "bottomleft")
-## PRINT KNOP:
-## haal hastags weg om toe te voegen.
-## werkte niet vloeiend en allen in chorme browser
-#%>%
-#onRender(
-#      "function(el, x) {
-#       L.easyPrint({
-#         sizeModes: ['A4Landscape', 'A4Portrait','a3Size'],
-#         filename: 'map',
-#         exportOnly: false,
-#         hideControlContainer: true
-#       }).addTo(this);
-#       }"
-#)
 
 leafletkaart
 #---------------------------
