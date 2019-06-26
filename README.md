@@ -47,7 +47,8 @@ The following features are implemented
   - [link to source](http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/a87f5ca8-f354-4ff6-adc3-70f1bf6b78e3)  
   - [Download](http://geodata.rivm.nl/downloads/ank/RIVM_R88_20170621_gm_actueelUHI.zip)   
   - [link to origin](https://www.atlasnatuurlijkkapitaal.nl/kaarten)
-- Mogelijk wateroverlast panden:  
+- Mogelijk wateroverlast panden: 
+  - [link to source](https://agv.klimaatatlas.net)  
 - Tree's datasets:  
   - [link to source part 1](https://maps.amsterdam.nl/open_geodata/?k=254)    
   - [link to source part 2](https://maps.amsterdam.nl/open_geodata/?k=255)    
@@ -55,8 +56,7 @@ The following features are implemented
   - [link to source part 4](https://maps.amsterdam.nl/open_geodata/?k=257)    
 - Groene daken  
   - [link to source](https://maps.amsterdam.nl/open_geodata/?k=51)
-- Play Grounds  
-  - [link to source]()
+
 
 ### Map features
 - minimap | [guide](https://rstudio.github.io/leaflet/morefeatures.html) | [link to source](https://github.com/Norkart/Leaflet-MiniMap) |
