@@ -25,6 +25,7 @@ The index of this document. In this document you can find references to used sou
 - [Development Knowledgemile Maps](#development-knowledgemile-maps)
   * [Show and hide leaflet layers](#show-and-hide-leaflet-layers)
   * [Performance of the data](#performance-of-the-data)
+  * [Mobile styling](#Mobile-styling)
   * [Packages used](#packages-used)
   * [Coordinate Reference Systems](#coordinate-reference-systems)
 - [Deployment](#deployment)
@@ -125,6 +126,15 @@ hittestress_amsterdam_small <- writeRaster(hittestress_Amsterdam, filename = "ra
 ```
 We then exported this data into a new file. The server can load this new file much faster.
 
+### Mobile styling
+So we added some code to change top banner color of supported mobile browsers. 
+```r
+ tags$head(
+   tags$meta(name="theme-color", content="#FFFF00"),
+   tags$meta(name="msapplication-navbutton-color", content="#FFFF00"),
+   tags$meta(name="apple-mobile-web-app-status-bar-style", content="#FFFF00")
+ ),
+```
 
 ### Packages used
 The following packages are used.  
@@ -178,6 +188,7 @@ To make the dashboard publicly available, you can make install shiny server your
 .
 ├── style.css                              # css stylesheet
 ├── server.R                               # server side R script
+├── global.R                               # global R script
 ├── ui.R                                   # Ui side R script    
 ├── data
 │   ├── groene_daken_2.shp
@@ -229,13 +240,11 @@ jsfile <- "https://rawgit.com/rowanwins/leaflet-easyPrint/gh-pages/dist/bundle.j
 ```
 
 ### More datasets
-There are a lot of datasets that can be included in the KnowledgeMile Maps. Here are some opensource datasets that could be included:
+There are a lot of datasets that can be included in the KnowledgeMile Maps. Here is an opensource datasets that could be included:
  - Geluid in Nederland (Lden):  
    - [link to source](https://www.atlasnatuurlijkkapitaal.nl/kaarten)  
    - [Download](https://geluid.rivm.nl/geluid/geluidbel_download.html)   
    - [link to origin](https://www.atlasnatuurlijkkapitaal.nl/kaarten)
- - soon..
- - soon.
  
 ### Story Telling
  It would be nice to have a discription and a legend per dataset about the dataset. We only have made one legend for 'Hittestress'. The legend can also be toggled by the group element in leaflet.
