@@ -122,7 +122,10 @@ hittestress <- raster("RIVM_R88_20170621_gm_actueelUHI.tif")
 hittestress <- projectRaster(hittestress,crs="+proj=longlat +datum=WGS84 +no_defs")
 hittestress_Amsterdam <- raster::intersect(hittestress,as(AmsterdamPolygon,"Spatial"))
 #save as rasterlayer 
-hittestress_amsterdam_small <- writeRaster(hittestress_Amsterdam, filename = "raster_amsterdam_hittestress", format = "GTiff", overwrite=TRUE)
+hittestress_amsterdam_small <- writeRaster(hittestress_Amsterdam,
+                                           filename = "raster_amsterdam_hittestress",
+                                           format = "GTiff",
+                                           overwrite=TRUE)
 ```
 We then exported this data into a new file. The server can load this new file much faster.
 
