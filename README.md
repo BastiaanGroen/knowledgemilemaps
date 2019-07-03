@@ -35,7 +35,7 @@ The index of this document. In this document you can find references to used sou
   * [Printing](#printing)
   * [More datasets](#more-datasets)
   * [Story Telling](#story-telling)
-- [Authors](#contact)
+- [Banner](#contact)
   
 
 
@@ -264,24 +264,33 @@ addLegend(pal = pal,
 
 
 
-## <a name="contact"></a> 🏷 Authors
+## <a name="contact"></a> 🏷 Banner
 ```r
-# _  __                    _          _              __  __ _ _      
-#| |/ /                   | |        | |            |  \/  (_) |     
-#| ' / _ __   _____      _| | ___  __| | __ _  ___  | \  / |_| | ___ 
-#|  < | '_ \ / _ \ \ /\ / / |/ _ \/ _` |/ _` |/ _ \ | |\/| | | |/ _ \
-#| . \| | | | (_) \ V  V /| |  __/ (_| | (_| |  __/ | |  | | | |  __/
-#|_|\_\_| |_|\___/ \_/\_/ |_|\___|\__,_|\__, |\___| |_|  |_|_|_|\___|
-#   | _  _ |_  |_) _  _ _|_ o  _  _ __   __/ |
-# \_|(_)_> | | |_)(_|_>  |_ | (_|(_|| | |___/                                                 
-#                                         
-# ----
-# Minor:            Data Science
-# Track:            Urban Analytics
-# Semester:         2
-# Projectsite:      https://knowledgemile.amsterdam/
-# Auteurs:          Josh Bleijenberg;
-#                   Bastiaan Groen;
-# ----
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#                                                                                                                        #
+# _  __                    _          _              __  __ _ _                                                          #
+#| |/ /                   | |        | |            |  \/  (_) |                         __CS____________        |       #
+#| ' / _ __   _____      _| | ___  __| | __ _  ___  | \  / |_| | ___       hp___________/ |  |  \       /        |       #
+#|  < | '_ \ / _ \ \ /\ / / |/ _ \/ _` |/ _` |/ _ \ | |\/| | | |/ _ \       \    |   |    |  |  |nm   ,'         /       #
+#| . \| | | | (_) \ V  V /| |  __/ (_| | (_| |  __/ | |  | | | |  __/       |    |   |    |  |  |  `./     _____|        #
+#|_|\_\_| |_|\___/ \_/\_/ |_|\___|\__,_|\__, |\___| |_|  |_|_|_|\___|       \    |   |_,--dam---'    \   _/ \  /         #
+#   | _  _ |_  |_) _  _ _|_ o  _  _ __   __/ |                               |   |_,-|    |  |       wap=.   \/\         #
+# \_|(_)_> | | |_)(_|_>  |_ | (_|(_|| | |___/          ~ GLOBAL ~            \  /|   |    |__|        /   \_ /  `\       #                                
+#                                                                             `/ |  _|    \   \      /      wp    `\     #
+# ----                                                                         \ \_/  \_  kp--mp--rp'      /  \          #
+# Minor:            Data Science                                                |  \_    \/____|__,-\     ,/    `\       #
+# Track:            Urban Analytics                                              \   \_  /     \    _\   /        `\     #
+# Semester:         2                                                             `\   \/___,--|---'  |_/           `    #
+# Projectsite:      https://knowledgemile.amsterdam/                                `\  |      \  ___/                   #
+# Auteurs:          Josh Bleijenberg;                                                   \_lp-----wc/                     #
+#                   Bastiaan Groen;                                                                                      #
+# contactpersonen:  Maarten Terpstra;                                             _  _   __   ____  ____                 #
+#                   Corine Laan;                                                 ( \/ ) / _\ (  _ \/ ___)                #
+# ----                                                                           / \/ \/    \ ) __/\___ \                #
+#                                                                                \_)(_/\_/\_/(__)  (____/                #
+# | Github pagina:                                                                                                       #
+# | https://github.com/BastiaanGroen/knowledgemilemaps                                                                   #
+#                                                                                                                        #
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-# 
 ```
 ![hva logo](./img/HVA-logo_ZW.png "hva")  
