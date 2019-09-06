@@ -165,7 +165,7 @@ install.packages("htmlwidgets")
 ```  
 
 ### Coordinate Reference Systems
-We use the following CRS throughout the project:  
+We used the following CRS throughout the project:  
 *+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0*
 ```r
 crs <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
