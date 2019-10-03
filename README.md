@@ -2,7 +2,7 @@
 <p align="center"><img src="./img/logo.png" /></p>  
 <br>
 
-<h1 align="center" style="border: none !important; padding-bottom: 1em !important;">🗺️ Knowledgemile Maps 🗺️</h1>  
+<h1 align="center" style="border: none !important; padding-bottom: 1em !important;">🗺️ Knowledgemile Maps 🗺️<br><br></h1>  
 
 
 <p align="center">
